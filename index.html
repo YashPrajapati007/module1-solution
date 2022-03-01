@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        body {
+            font-size: 1em;
+        }
+    </style>
+    <title>Assignment1</title>
+</head>
+
+<body ng-app="LunchCheck">
+    <h1>Hello!</h1>
+
+    <p>Enter the Items you ate</p>
+
+    <div ng-controller="LunchCheckController">
+        <input type="text" ng-model="items" ng-style="myObj">
+        <br> <br>
+        <!-- I did not consider an empty item  -->
+        <button ng-click="checkBtn()">Check If Too Much</button>
+    </div>
+
+</body>
+
+</html>
